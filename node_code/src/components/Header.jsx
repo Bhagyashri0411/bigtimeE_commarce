@@ -32,13 +32,16 @@ const Header = () => {
         <>
 
             <div className="header">
-                <div className="container">
+                <div className="col-md-9 mx-auto">
                     <div className="mobile-header">
-                        <div className="container">
+                        <div className="col-md-9 mx-auto">
                             <div className="row">
                                 <div className="col-6 d-flex align-items-center">
                                     <Link to="/" className="navbar-brand">
-                                        <img src="/images/logo.svg" alt="logo" />
+                                        {/* <img src="/images/logo.svg" alt="logo" />
+                                        
+                                        */}
+                                        Bigtime E_commarce
                                     </Link>
                                 </div>
                                 <div className="col-6 d-flex align-items-center justify-content-end">
@@ -84,7 +87,7 @@ const Header = () => {
                                     <form action="" className="input-group" onSubmit={submitHandler}>
                                         <input type="search" className="form-control rounded search" placeholder="Search..." onChange={(e) => setKeyword(e.target.value)} />
 
-                                        <button type="submit" className="search-button tophead blue">Search</button>
+                                        <button type="submit" className="search-button tophead skblue">Search</button>
                                     </form>
                                 </div>
                             </div>
@@ -95,17 +98,18 @@ const Header = () => {
                         <div className="row">
                             <div className="col-md-2 col-4 d-flex align-items-center">
                                 <Link className="navbar-brand" to="/">
-                                    <img src="/images/logo.svg" alt="logo" />
+                                    {/* <img src="/images/logo.svg" alt="logo" /> */}
+                                    Bigtime E_commarce
                                 </Link>
                             </div>
                             <div className="col-md-7 col-8 d-flex align-items-center">
                                 <form action="" className="input-group" onSubmit={submitHandler}>
                                     <input type="search" className="form-control rounded search" placeholder="Search..." onChange={(e) => setKeyword(e.target.value)} />
-                                    <button type="submit" className="search-button tophead blue">Search</button>
+                                    <button type="submit" className="search-button tophead skblue">Search</button>
                                 </form>
                             </div>
                             <div className="col-md-3 d-flex align-items-center justify-content-end Login-Register border-right-1">
-                                <Link className="btn-outline  tophead blue me-3" to="/selling">Start A selling</Link>
+                                <Link className="btn-outline  tophead blue me-3" to="/email">Start A selling</Link>
                                 <Link className="cart-mobile-icon" to="/cart">
 
                                     <i className="fa fa-heart"></i>

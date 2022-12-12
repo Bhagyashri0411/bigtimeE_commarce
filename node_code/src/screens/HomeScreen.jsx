@@ -4,8 +4,9 @@ import ShopSection from "./../components/homeComponents/ShopSection";
 import CalltoActionSection from "./../components/homeComponents/CalltoActionSection";
 import ContactInfo from "./../components/homeComponents/ContactInfo";
 import Footer from "./../components/Footer";
-// import LeastedProducts from "../components/homeComponents/LeatestProducts";
-import Slideshow from "../components/homeComponents/SlideShow";
+import { LeastProducts } from "../components/homeComponents/LeastProducts";
+// import LeastedProducts from "../components/homeComponents/ListofProducts";
+// import Slideshow from "../components/homeComponents/SlideShow";
 
 const HomeScreen =({match}) =>{
     window.scrollTo(0,0)
@@ -15,10 +16,11 @@ const HomeScreen =({match}) =>{
     return(
         <>
         <Header/>
-        <Slideshow/>
+        {/* <Slideshow/> */}
         <ShopSection keyword={keyword} currentPage={currentPage}/>
         {/* <Model/> */}
         {/* <LeastedProducts/> */}
+        <LeastProducts/>
         <CalltoActionSection/>
         <ContactInfo/>
         <Footer/>
