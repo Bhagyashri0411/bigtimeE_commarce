@@ -98,7 +98,7 @@ const SingleProduct = ({ history, match }) => {
                                                             <div className="product-price d-flex align-items-center gap-3">
                                                                 <div className="h4 fw-bold">${product.afterdiscount}</div>
                                                                 <div className="h5 fw-light text-muted text-decoration-line-through">${product.price}</div>
-                                                                <div className="h4 fw-bold text-danger">{desCount}%</div>
+                                                                <div className="h4 fw-bold text-danger">{desCount.toFixed()}%</div>
                                                             </div>
                                                             <p className="fw-bold mb-2 mt-1 text-success">inclusive of all taxes</p>
 

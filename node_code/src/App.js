@@ -18,9 +18,11 @@ import PrivateRouder from "./PrivateRouder";
 import AboutUs from "./components/homeComponents/AboutUs";
 import Validation from "./components/StartSelling/Validation";
 import Billing from "./components/HeaderComponents/Billing";
-import  FormSelling  from "./components/StartSelling/FormSelling";
+import FormSelling from "./components/StartSelling/FormSelling";
 import Contactus from "./components/HeaderComponents/Conatctus"
 import Model from "./components/homeComponents/Model";
+import emailAuth from "./components/StartSelling/emailAuth";
+import { Instruction } from "./components/StartSelling/Instruction";
 
 const App = () => {
   return (
@@ -34,16 +36,18 @@ const App = () => {
         <Route component={Model} path="/model/:id"></Route>
         <Route component={Login} path="/login" />
         <Route component={Register} path="/register" />
-        <Route component={AboutUs} path="/aboutus"/>
+        <Route component={AboutUs} path="/aboutus" />
         <PrivateRouder component={ProfileScreen} path="/profile" />
-        <Route component={FormSelling} path="/selling"/>
+        <Route component={Instruction} path="/instruction"/>
+        <Route component={emailAuth} path="/email" />
+        <Route component={FormSelling} path="/selling" />
         <Route component={CartScreen} path="/cart/:id?" />
         <PrivateRouder component={ShippingScreen} path="/shipping" />
         <PrivateRouder component={PaymentScreen} path="/payment" />
         <PrivateRouder component={PlaceOrderScreen} path="/placeorder" />
         <PrivateRouder component={OrderScreen} path="/order/:id" />
-        <Route component={Validation} path="/selling"/>
-        <Route component={Billing} path="/billing"/>
+        <Route component={Validation} path="/selling" />
+        <Route component={Billing} path="/billing" />
         <Route component={Contactus} path="/contactus"></Route>
         <Route component={NotFound} path="*" />
       </Switch>

@@ -1,15 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
         <footer className="text-center text-lg-start bg-white text-muted mt-5">
             {/* Section: Links  */}
             <section className style={{ backgroundColor: 'rgba(0, 0, 0, 0.025)' }}>
-                <div className="col-md-10 mx-auto ">
+                <div className="col-md-10 mx-auto pt-5">
                     <div className="row">
                         <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                             {/* Content */}
-                            <img src="shopingoicon.png" alt="" style={{ height: '70px', paddingTop: '23px' }} />
+                            <Link className="navbar-brand" to="/">
+                                {/* <img src="/images/logo.svg" alt="logo" /> */}
+                                Bigtime E_commarce
+                            </Link>
                             <h6 className="pt-4 fw-bold mb-4" style={{ color: 'black' }}>About Us</h6>
                             <p className="hjbjb">
                                 There are many variations of passages of Lorem Ipsum available, but the majority have
@@ -20,7 +24,7 @@ const Footer = () => {
                         </div>
                         <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 ">
                             <div className="box">
-                                <h6 className="pt-4 fw-bold mb-4" style={{ color: 'black' }}>
+                                <h6 className=" fw-bold mb-4" style={{ color: 'black' }}>
                                     Explore
                                 </h6>
                                 <p className="mb-2">

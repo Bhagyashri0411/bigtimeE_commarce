@@ -73,7 +73,7 @@ const Dropval = {
             value: "xs"
         }
     ],
-  
+
     yesno: [
         {
             value: "Yes",
@@ -86,32 +86,24 @@ const Dropval = {
     ],
     Categories: [
         {
-            value: "Entertainment, Technology & Electronics",
-            label: "Entertainment, Technology & Electronics"
+            value: "Clothing and Accessories",
+            label: "Clothing and Accessories"
         },
         {
-            value: "Fashion & Apparel",
-            label: "Fashion & Apparel"
+            value: "Consumer Electronic",
+            label: "Consumer Electronic"
         },
         {
-            value: "Home décor & Maintenance",
-            label: "Home décor & Maintenance"
-        },
-        {
-            value: "Food",
-            label: "Food"
+            value: "Software",
+            label: "Software"
         },
         {
             value: "Beauty & Personal care",
             label: "Beauty & Personal care"
         },
         {
-            value: "Eco-friendly & Natural products",
-            label: "Eco-friendly & Natural products"
-        },
-        {
-            value: "Healthcare & Fitness",
-            label: "Healthcare & Fitness"
+            value: "Health and Personal care",
+            label: "Health and Personal care"
         }
     ],
     Electronic: [
@@ -130,22 +122,12 @@ const Dropval = {
             label: "Men's Clothes"
         },
         {
-            value: "Men's Clothes",
-            label: "Men's Clothes"
+            value: "Women's Clothes",
+            label: "Women's Clothes"
         },
         {
-            value: "Children Section",
-            label: "Children Section"
-        }
-    ],
-    Food: [
-        {
-            value: "banana",
-            label: "banana"
-        }, 
-        {
-            value: "apple",
-            label: "apple"
+            value: "Kid's Section",
+            label: "Kid's Section"
         }
     ]
 }
